@@ -276,7 +276,7 @@
 //                                  No_14
 
 
-// function inverseNumber(N) {
+// const inverseNumber = (function(N) {
 //   let inverse = '';
 
 //   while (N != 0) {
@@ -286,15 +286,15 @@
 //   }
 //   console.log(`Natija ${inverse}`);
 
-// }
+// })(56814)
 
-// inverseNumber(56814)
+
 
 
 //                                  No_15
 
 
-// function inverseNumber(N) {
+// const inverseNumber = (function(N) {
 //   let inverse = '';
 
 //   while (N != 0) {
@@ -304,20 +304,17 @@
 //   }
 
 //   return Number(inverse);
-// }
+// })
 
-// function isPalindrom(N) {
+// const isPalindrom = N =>  N == inverseNumber(N)
 
-//   return N == inverseNumber(N)
-// }
-
-// console.log(isPalindrom(1678761));
+// console.log(isPalindrom(16761));
 
 
 //                                  No_16
 
 
-// function factorial(N) {
+// let factorial = (function(N) {
 //   let result = 1;
 //   if (N >= 0) {
 //     for (let i = 1; i <= N; i++) {
@@ -328,15 +325,15 @@
 //     return 1;
 //   }
 
-// }
+// })(5)
 
-// console.log(factorial(5));
+// console.log(factorial);
 
 
 //                                  No_17
 
 
-// function getSum3(N) {
+// const getSum3 = (function(N) {
 //   let total = 0;
 //   if (N >= 0) {
 //     for (let i = 1; i <= N; i++) {
@@ -350,9 +347,7 @@
 //     return 1;
 //   }
 
-// }
-
-// getSum3(15);
+// })(15)
 
 
 //                                  No_18
