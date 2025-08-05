@@ -358,7 +358,7 @@
 //                                  No_18
 
 
-// function sumOddEven(N) {
+// const sumOddEven = function(N) {
 //   let toq = 0;
 //   let juft = 0;
 //   if (N > 0) {
@@ -384,7 +384,7 @@
 //                                  No_19
 
 
-// function invertTime(H, M, S) {
+// const invertTime = function(H, M, S) {
 //   let T = 0;
 
 //   T += H * 3600;
@@ -400,7 +400,7 @@
 //                                  No_20
 
 
-// function decTime(H, M, S) {
+// const decTime = (function (H, M, S) {
 //   S -= 1;
 
 //   if (S < 0) {
@@ -423,28 +423,29 @@
 
 
 //   return `${hh}:${mm}:${ss}`;
-// }
+// })(0, 6, 0)
 
-// console.log(decTime(0, 6, 0));
+// console.log(decTime);
 
 
 //                                  No_21
 
 
-// function isLeapYear(Y) {
+// const isLeapYear = (function(Y) {
 //   if ((Y % 4 === 0 && Y % 100 !== 0) || (Y % 400 === 0)) {
 //     return true;
 //   } else {
 //     return false;
 //   }
-// }
+// })(2024)
 
-// console.log(isLeapYear(2024));
+// console.log(isLeapYear);
 
 
 //                                  No_22
 
-// function isLeapYear(Y) {
+
+// const isLeapYear = (Y) => {
 //   if ((Y % 4 === 0 && Y % 100 !== 0) || (Y % 400 === 0)) {
 //     return true;
 //   } else {
@@ -452,7 +453,7 @@
 //   }
 // }
 
-// function monthDays(M, Y) {
+// const monthDays = (function(M, Y) {
 //   if (M < 1 || M > 12) {
 //     return -1;
 //   }
@@ -470,18 +471,15 @@
 //   }
 
 //   return 31;
-// }
+// })(3, 2021)
 
-// console.log(monthDays(3, 2021));
-
-
-//                                  22 bilan 23 ishlay olmadim!
+// console.log(monthDays);
 
 
 //                                  No_25
 
 
-// function getDividersNumberAndSum(N) {
+// const result = (function(N) {
 //   let count = 0;
 //   let total = 0;
 
@@ -491,7 +489,15 @@
 //       total += i;
 //     }
 //   }
-//   return `Natija ${count}, ${total}`
-// }
+//   return (`Natija ${count}, ${total}`)
+// })(12);
 
-// console.log(getDividersNumberAndSum(12));
+// console.log(result);
+
+
+
+
+// 1. function name() {}    declaration function
+// 2. const name = function () {}   expression function
+// 3. const name = () => {};   arrow function
+// 4. (function() {})()    IIFE function
